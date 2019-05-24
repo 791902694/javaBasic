@@ -1,6 +1,4 @@
-package com.neuedu.homeword;
-
-import java.util.Scanner;
+package com.neuedu.homeword0523;
 
 public class work0523 {
     public static void main(String[] args) {
