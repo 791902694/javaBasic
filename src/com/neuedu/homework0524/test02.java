@@ -1,13 +1,21 @@
 package com.neuedu.homework0524;
 
+import java.util.Scanner;
+
 public class test02 {
     public static void main(String[] args) {
-        //程序分析：利用for循环控制100-999个数，每个数分解出个位，十位，百位。
-        for (int i=100;i<1000;i++){
-            int a=i/100;
-            int b=i%100/10;
-            int c=i%10;
-            System.out.println("百位数："+a+" "+"十位数："+b+" "+"个位数："+c);
+        //题目：利用条件运算符的嵌套来完成此题：学习成绩>=90分的同学用A表示，
+        // 60-89分之间的用B表示，60分以下 的用C表示。
+        Scanner scanner = new Scanner(System.in);
+        int a=scanner.nextInt();
+        if(a>=90&&a<=100){
+            System.out.println("成绩为：A");
+        }else if(a>=60&&a<90){
+            System.out.println("成绩为：B");
+        }else if(0<=a&&a<60){
+            System.out.println("成绩为：C");
+        }else {
+            System.out.println("请输入正确成绩");
         }
     }
 }

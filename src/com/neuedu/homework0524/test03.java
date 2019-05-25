@@ -1,21 +1,23 @@
 package com.neuedu.homework0524;
 
-import java.util.Scanner;
-
 public class test03 {
     public static void main(String[] args) {
-        //题目：利用条件运算符的嵌套来完成此题：学习成绩>=90分的同学用A表示，
-        // 60-89分之间的用B表示，60分以下 的用C表示。
-        Scanner scanner = new Scanner(System.in);
-        int a=scanner.nextInt();
-        if(a>=90&&a<=100){
-            System.out.println("成绩为：A");
-        }else if(a>=60&&a<90){
-            System.out.println("成绩为：B");
-        }else if(0<=a&&a<60){
-            System.out.println("成绩为：C");
-        }else {
-            System.out.println("请输入正确成绩");
+        //题目：有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？
+        // 1.程序分析：可填在百位、十位、个位的数字都是1、2、3、4。组成所有的排列后再去 掉不满足条件的排列。
+        int y=0;
+        int x=0;
+        for(int a=1;a<=4;a++){
+            for(int b=1;b<=4;b++){
+                for(int c=1;c<=4;c++){
+                    if(a!=b&&b!=c){
+                        x=a*100+b*10+c;
+                        y=y+1;
+                        System.out.println(" "+x);
+                    }
+
+                }
+            }
         }
+        System.out.println("总共有"+y+"个数字");
     }
 }
