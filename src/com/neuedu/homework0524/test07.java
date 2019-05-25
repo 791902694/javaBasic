@@ -7,6 +7,7 @@ public class test07 {
         //判断一个年份是平年还是闰年
         //能被4整除但不能被100整除的年份为普通闰年。
         //能被400整除的为世纪闰年。
+        System.out.println("请输入一个年份：");
         Scanner scanner = new Scanner(System.in);
         int a=scanner.nextInt();
         if(a%4==0&&a%100!=0){
