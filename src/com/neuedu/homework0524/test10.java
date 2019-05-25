@@ -17,19 +17,8 @@ public class test10 {
                 System.out.println(e+":这个数能被9整除");
             }else {
                 System.out.println(e+":这个数不能被9整除");
-
+            }
         }
-
-        }
-//        int b=a/100;
-//        int c=a%10/10;
-//        int d=a%10;
-//        int e=b+c+d;
-//        if(e%9==0){
-//            System.out.println(a+"此数能被9整除");
-//        }else {
-//            System.out.println(a+"此数不能被9整除");
-//        }
 
     }
 
