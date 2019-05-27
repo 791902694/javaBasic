@@ -9,7 +9,7 @@ public class test03 {
         for(int a=1;a<=4;a++){
             for(int b=1;b<=4;b++){
                 for(int c=1;c<=4;c++){
-                    if(a!=b&&b!=c){
+                    if(a!=b&&b!=c&&a!=c){
                         x=a*100+b*10+c;
                         y=y+1;
                         System.out.println(" "+x);

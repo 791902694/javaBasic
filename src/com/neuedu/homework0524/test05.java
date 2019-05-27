@@ -7,9 +7,9 @@ public class test05 {
         int b=0;
         for(int i=0;i<=100;i++){
             if(i%2==0){
-                a=a+i;
+                a+=i;
             }else if(i%2==1) {
-                b = b + i;
+                b+=i;
             }
         }
         System.out.println("偶数和为："+a+" "+"奇数和为："+b);
