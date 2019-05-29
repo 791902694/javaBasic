@@ -7,6 +7,7 @@ public class test05 {
         work05 study3 =new work05();
         work05 study4 =new work05();
         work05 study5 =new work05();
+
         study1.sage=12;
         study1.sname="张三";
         study1.score=78;
